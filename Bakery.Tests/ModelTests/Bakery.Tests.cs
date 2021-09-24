@@ -24,6 +24,12 @@ namespace Bakery.Tests
       Bread testBread = new Bread();
       Assert.AreEqual(10, testBread.BreadOrder(3));
     }
+    [TestMethod]
+    public void IsBreadOrder_CreatesBreadOrderBOGO_ReturnInt()
+    {
+      Bread testBread = new Bread();
+      Assert.AreEqual(40, testBread.BreadOrder(4));
+    }
 
 
   }
