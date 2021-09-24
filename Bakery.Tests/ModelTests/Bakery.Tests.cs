@@ -12,6 +12,13 @@ namespace Bakery.Tests
       Bread testBread = new Bread();
       Assert.AreEqual(true, testBread.BreadOrder(20));
     }
+
+    [TestMethod]
+    public void IsMain_CreatesGreeting_True()
+    {
+      Bread testBread = new Bread();
+      Assert.AreEqual("Welcome to Fresh Dawn Bakery!", testBread.Main());
+    }
   }
 
   // [TestClass]
