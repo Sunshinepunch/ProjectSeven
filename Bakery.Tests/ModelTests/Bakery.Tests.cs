@@ -34,7 +34,7 @@ namespace Bakery.Tests
     public void PastryOrder_ReturnsPriceOf4Pastry_ReturnPrice()
     {
       Pastry testPastry = new Pastry();
-      Assert.AreEqual(7, testPastry.PastryOrder(4));
+      Assert.AreEqual(10, testPastry.PastryOrder(6));
     }
   }
 }

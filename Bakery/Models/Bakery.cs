@@ -18,15 +18,15 @@ namespace Bakery
     }
     public int BreadOrder(int loaves)
     {
-    int price = 0;
+    int breadprice = 0;
     for(int i = 0; i<loaves; i++){
       if(i%3 == 0)
       {
-        price += 0;
+        breadprice += 0;
       } else {
-        price += 5;
+        breadprice += 5;
       }
-    } return price;
+    } return breadprice;
     }
   }
 
@@ -34,23 +34,21 @@ namespace Bakery
   {
     public int PastryOrder(int pastry)
     {
-      if(pastry == 1)
+      int pastryprice = 0;
+      for(int i = 0; i<pastry; i++){
+      if(i%1==0)
       {
-        return 2;
-      } else if (pastry == 2)
-      {
-        return 4;
-      } else if(pastry == 4){
-        return 7;
-      } else if (pastry == 5)
-      {
-        return 9;
-      } else if (pastry == 6)
-      {
-        return 10;
+        pastryprice += 2;
+      } else if(i%3 == 0 ) {
+        pastryprice += 5;
+      } else if(i%4==0) {
+        pastryprice +=7;
+      } else if (i%5 == 0) {
+        pastryprice += 9;
       } else {
-        return 0;
+        pastryprice+= 12;
       }
+    } return pastryprice;
     }
   }
 }
