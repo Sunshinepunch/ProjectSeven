@@ -35,20 +35,15 @@ namespace Bakery
     public int PastryOrder(int pastry)
     {
       int pastryprice = 0;
-      for(int i = 0; i<pastry; i++){
-      if(i%1==0)
+      int pastrynum = pastry%6;
+      int pastrynum2 = pastry - pastrynum;
+      if(pastrynum == 0)
       {
-        pastryprice += 2;
-      } else if(i%3 == 0 ) {
-        pastryprice += 5;
-      } else if(i%4==0) {
-        pastryprice +=7;
-      } else if (i%5 == 0) {
-        pastryprice += 9;
+        pastryprice += ((pastry/6) * 10);
       } else {
-        pastryprice+= 12;
+        return 0;
       }
-    } return pastryprice;
+     return pastryprice;
     }
   }
 }
