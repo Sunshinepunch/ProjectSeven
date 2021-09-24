@@ -7,18 +7,13 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void IsBreadOrder_CreatesBreadOrder_True()
+    public void IsBreadOrder_CreatesBreadOrder_ReturnInt5()
     {
       Bread testBread = new Bread();
-      Assert.AreEqual(true, testBread.BreadOrder(20));
+      Assert.AreEqual(5, testBread.BreadOrder(1));
     }
 
-    [TestMethod]
-    public void IsMain_CreatesGreeting_True()
-    {
-      Bread testBread = new Bread();
-      Assert.AreEqual("Welcome to Fresh Dawn Bakery!", testBread.Main());
-    }
+
   }
 
   // [TestClass]
