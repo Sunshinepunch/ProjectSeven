@@ -37,9 +37,9 @@ namespace Bakery
       if(pastry == 1)
       {
         return 2;
-      } else if (pastry == 3)
+      } else if (pastry == 2)
       {
-        return 5;
+        return 4;
       } else if(pastry == 4){
         return 7;
       } else if (pastry == 5)
