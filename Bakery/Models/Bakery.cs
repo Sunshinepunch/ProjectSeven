@@ -40,8 +40,20 @@ namespace Bakery
       if(pastrynum == 0)
       {
         pastryprice += ((pastry/6) * 10);
-      } else {
-        return 0;
+      } else if(pastry == 1){
+        pastryprice += 2;
+      } else if(pastry == 3){
+        pastryprice += 5;
+      } else if(pastry == 4){
+        pastryprice += 7;
+      } else if(pastry == 5){
+        pastryprice += 9;
+      } else if(pastrynum == 1 && pastrynum2 > 0){
+        pastryprice += ((pastrynum2/6)*10);
+        pastryprice += 2;
+      } else if(pastrynum == 2 && pastrynum2 >0) {
+        pastryprice += ((pastrynum2/6)*10);
+        pastryprice += 4;
       }
      return pastryprice;
     }
