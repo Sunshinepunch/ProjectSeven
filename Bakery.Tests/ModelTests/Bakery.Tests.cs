@@ -34,13 +34,14 @@ namespace Bakery.Tests
 
   }
 
-  // [TestClass]
-  // public class PastryTests
-  // {
-  //  [TestMethod]
-  //   public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-  //   {
-  //     Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-  //   }
-  // }
+  [TestClass]
+  public class PastryTests
+  {
+   [TestMethod]
+    public void PastryOrder_ReturnsPriceOfPastry_ReturnInt()
+    {
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(3, testPastry.PastryOrder(3));
+    }
+  }
 }
