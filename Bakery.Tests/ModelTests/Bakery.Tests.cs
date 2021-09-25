@@ -31,22 +31,40 @@ namespace Bakery.Tests
       Assert.AreEqual(5, testPastry.PastryOrder(3));
     }
     [TestMethod]
-    public void PastryOrder_ReturnsPriceOf4Pastry_ReturnPrice()
+    public void PastryOrder_ReturnsPriceOf6Pastry_ReturnPrice()
     {
       Pastry testPastry = new Pastry();
       Assert.AreEqual(10, testPastry.PastryOrder(6));
     }
     [TestMethod]
-    public void PastryOrder_ReturnsPriceOf4Pastry_ReturnPrice12()
+    public void PastryOrder_ReturnsPriceOf7Pastry_ReturnPrice()
     {
       Pastry testPastry = new Pastry();
       Assert.AreEqual(12, testPastry.PastryOrder(7));
     }
     [TestMethod]
-    public void PastryOrder_ReturnsPriceOf4Pastry_ReturnPrice14()
+    public void PastryOrder_ReturnsPriceOf8Pastry_ReturnPrice()
     {
       Pastry testPastry = new Pastry();
       Assert.AreEqual(14, testPastry.PastryOrder(8));
+    }
+    [TestMethod]
+    public void PastryOrder_ReturnsPriceOf9Pastry_ReturnPrice()
+    {
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(15, testPastry.PastryOrder(9));
+    }
+    [TestMethod]
+    public void PastryOrder_ReturnsPriceOf10Pastry_ReturnPrice()
+    {
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(17, testPastry.PastryOrder(10));
+    }
+    [TestMethod]
+    public void PastryOrder_ReturnsPriceOf11Pastry_ReturnPrice()
+    {
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(19, testPastry.PastryOrder(11));
     }
   }
 }
