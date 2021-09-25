@@ -98,3 +98,4 @@ C:\Users\Becket\Desktop\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\Bakery.Tes
 C:\Users\Becket\Desktop\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\ref\Bakery.Tests.dll
 C:\Users\Becket\Desktop\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\Bakery.Tests.pdb
 C:\Users\Becket\Desktop\Bakery.Solution\Bakery.Tests\obj\Debug\net5.0\Bakery.Tests.genruntimeconfig.cache
+C:\Users\Becket\Desktop\Bakery.Solution\Bakery.Tests\bin\Debug\net5.0\Bakery.exe

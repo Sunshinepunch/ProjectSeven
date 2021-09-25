@@ -67,4 +67,18 @@ namespace Bakery.Tests
       Assert.AreEqual(19, testPastry.PastryOrder(11));
     }
   }
+  [TestClass]
+  public class Program
+  {
+    [TestMethod]
+    public void IsMain_CreatesTotalOrder_ReturnTotalPrice()
+    {
+      Bread testBread = new Bread();
+      int breadOrder = testBread.BreadOrder(10);
+      Pastry testPastry = new Pastry();
+      int pastryOrder = testPastry.PastryOrder(6);
+      int totalPrice = breadOrder + pastryOrder;
+      Assert.AreEqual(totalPrice, 45);
+    }
+  }
 }
