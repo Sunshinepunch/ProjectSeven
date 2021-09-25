@@ -1,26 +1,32 @@
-// using System;
+using System;
+using System.Collections.Generic;
 
 
 
 namespace Bakery
 {
-  public class Bread
+  public class Program
   {
     public static void Main()
     {
-       Console.WriteLine("Welcome to Fresh Dawn Bakery! \n Our bread is priced as following: \n 1 loaf : $5 \n 2 loaves : $10 \n Buy 2 loaves and receive a third free!");
-       Console.WriteLine("Our pastries are priced as follows: \n 1 pastry : $2 \n 3 pastries : $5 \n 4 pastries : $7 \n 5 pastries $9 \n 6 pastries : $10");
-       Console.WriteLine("Please enter the number of loaves you would like to order: ");
-       int breadOrder = Console.ReadLine();
-      //  int breadOrderNum = Convert.ToInt32(breadOrder);
-       Console.WriteLine("Please enter the number of pastries you would like to order: ");
-       int pastryOrder = Console.Readline();
-      //  int breadOrderNum = Convert.ToInt32(breadOrder);
-      int breadOrderPrice = this.BreadOrder(breadOrder);
-      int pastryOrderPrice = this.PastryOrder(pastryOrder);
+      Bread theBread = new Bread();
+      Pastry thePastry = new Pastry();
+      Console.WriteLine("Welcome to Fresh Dawn Bakery! \n Our bread is priced as following: \n 1 loaf : $5 \n 2 loaves : $10 \n Buy 2 loaves and receive a third free!");
+      Console.WriteLine("Our pastries are priced as follows: \n 1 pastry : $2 \n 3 pastries : $5 \n 4 pastries : $7 \n 5 pastries $9 \n 6 pastries : $10");
+      Console.WriteLine("Please enter the number of loaves you would like to order: ");
+      string breadOrder = Console.ReadLine();
+      int breadOrderNum = Convert.ToInt32(breadOrder);
+      Console.WriteLine("Please enter the number of pastries you would like to order: ");
+      string pastryOrder = Console.ReadLine();
+      int pastryOrderNum = Convert.ToInt32(pastryOrder);
+      int breadOrderPrice = theBread.BreadOrder(breadOrderNum);
+      int pastryOrderPrice = thePastry.PastryOrder(pastryOrderNum);
       int totalprice = breadOrderPrice + pastryOrderPrice;
-      Console.WriteLine("Your total is " + ${totalprice} + "dollars. Thanks for choosing Fresh Dawn!");
+      Console.WriteLine("Your total is " + totalprice + " dollars. Thanks for choosing Fresh Dawn!");
     }
+  }
+  public class Bread
+  {
     public int BreadOrder(int loaves)
     {
     int breadprice = 0;
