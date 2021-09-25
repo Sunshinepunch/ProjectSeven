@@ -30,7 +30,7 @@ namespace Bakery
     public int BreadOrder(int loaves)
     {
     int breadprice = 0;
-    for(int i = 0; i<loaves; i++){
+    for(int i = 0; i<=loaves; i++){
       if(i%3 == 0)
       {
         breadprice += 0;
