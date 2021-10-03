@@ -7,6 +7,12 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
+    public void IsBreadOrder_CreatesBreadOrder_ReturnClass()
+    {
+      Bread testBread = new Bread();
+      Assert.AreEqual(typeof(Bread), testBread.GetType());
+    }
+    [TestMethod]
     public void IsBreadOrder_CreatesBreadOrder_ReturnPrice()
     {
       Bread testBread = new Bread();
@@ -17,6 +23,12 @@ namespace Bakery.Tests
   [TestClass]
   public class PastryTests
   {
+    [TestMethod]
+    public void IsPastryOrder_CreatesPastryOrder_ReturnClass()
+    {
+      Pastry testPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), testPastry.GetType());
+    }
    [TestMethod]
     public void PastryOrder_ReturnsPriceOf1Pastry_ReturnPrice2()
     {
